@@ -1,0 +1,143 @@
+body {
+    background-color: #f3d9d9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0000001A;
+    width: 450px;
+}
+
+.ez {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+}
+
+.todo-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+#addTaskBtn {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pangalan {
+    text-align: left;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+#taskList .task-text {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#taskList .task-text::before,
+#taskList .task-text::after {
+    content: "[";
+    display: inline;
+}
+
+#taskList .task-text::after {
+    content: "]";
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    border: 1px solid #cc0000;
+    color: white;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+    transform: scale(1.1);
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    color: grey;
+}
